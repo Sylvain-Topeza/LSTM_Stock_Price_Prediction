@@ -8,7 +8,7 @@ import matplotlib.pyplot as plt
 
 def load_data(ticker, start_date, end_date):
     """
-    Load stock price data using yfinance and preprocess it.
+    Load stock price data using yfinance and preprocess it
     """
     data = yf.download(ticker, start=start_date, end=end_date)
     data = data[['Close']]
@@ -16,7 +16,7 @@ def load_data(ticker, start_date, end_date):
 
 def preprocess_data(data, lookback=60):
     """
-    Normalize the data and create sequences for LSTM.
+    Normalize the data and create sequences for LSTM
     """
     scaler = MinMaxScaler(feature_range=(0, 1))
     scaled_data = scaler.fit_transform(data)
@@ -32,7 +32,7 @@ def preprocess_data(data, lookback=60):
 
 def build_model(input_shape):
     """
-    Build and compile an LSTM model.
+    Build and compile an LSTM model
     """
     model = Sequential([
         LSTM(units=50, return_sequences=True, input_shape=input_shape),
@@ -46,14 +46,14 @@ def build_model(input_shape):
 
 def train_model(model, X_train, y_train, epochs=20, batch_size=32):
     """
-    Train the LSTM model.
+    Train the LSTM model
     """
     history = model.fit(X_train, y_train, epochs=epochs, batch_size=batch_size, verbose=1)
     return history
 
 def evaluate_model(model, X_test, y_test, scaler):
     """
-    Evaluate the model and plot predictions vs actual values.
+    Evaluate the model and plot predictions vs actual values
     """
     test_loss = model.evaluate(X_test, y_test, verbose=1)
     print(f"Mean Squared Error on Test Data: {test_loss}")
@@ -73,7 +73,7 @@ def evaluate_model(model, X_test, y_test, scaler):
 
 def save_model(model, filename="lstm_price_prediction_model.h5"):
     """
-    Save the trained model to a file.
+    Save the trained model to a file
     """
     model.save(filename)
     print(f"Model saved as {filename}")
