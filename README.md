@@ -1,19 +1,31 @@
-# LSTM Stock Price Prediction
+# LSTM Stock and BTC Price Prediction
 
 ## Overview
-This project implements a Long Short-Term Memory (LSTM) model to predict AAPL stock prices based on historical closing prices. The model is trained using Python and TensorFlow, with a focus on preprocessing financial data, building a robust LSTM architecture, and visualizing the prediction results.
+This project implements Long Short-Term Memory (LSTM) models to predict **AAPL stock prices** based on historical closing prices and **BTC-USD prices** on a **15-minute timeframe**. The models are trained using Python and TensorFlow, focusing on preprocessing financial data, building robust LSTM architectures, and visualizing prediction results.
 
 Key Features:
 - Data collection via `yfinance`.
-- LSTM model for time series forecasting.
+- LSTM models for time series forecasting (both AAPL stock and BTC-USD).
 - Performance evaluation using Mean Squared Error (MSE).
 - Visualization of predicted vs actual prices.
 
-## Results
-- **Mean Squared Error on Test Data**: `0.0007619597599841654`
-- Below is a sample graph showing actual vs predicted prices:
+---
 
-![Predicted vs Actual Prices](Actual_vs_predicted_prices.png)
+## Results
+
+### AAPL Stock Prediction
+- **Mean Squared Error on Test Data**: `0.0007619597599841654`  
+- Below is a sample graph showing actual vs predicted prices:  
+![Predicted vs Actual Prices (AAPL)](Actual_vs_predicted_prices_AAPL.png)
+
+---
+
+### BTC-USD Price Prediction (15-minute timeframe)
+- **Mean Squared Error on Test Data**: `0.00012185040395706892`  
+- Below is a sample graph showing actual vs predicted prices:  
+![Predicted vs Actual Prices (BTC-USD)](Actual_vs_predicted_prices_BTC.png)
+
+---
 
 ## Installation
 
