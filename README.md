@@ -15,14 +15,16 @@ Key Features:
 
 ### AAPL Stock Prediction
 - **Mean Squared Error on Test Data**: `0.0007619597599841654`  
-- Below is a sample graph showing actual vs predicted prices:  
+- Below is a sample graph showing actual vs predicted prices:
+  
 ![Predicted vs Actual Prices (AAPL)](Actual_vs_predicted_prices_AAPL.png)
 
 ---
 
 ### BTC-USD Price Prediction (15-minute timeframe)
 - **Mean Squared Error on Test Data**: `0.00012185040395706892`  
-- Below is a sample graph showing actual vs predicted prices:  
+- Below is a sample graph showing actual vs predicted prices:
+  
 ![Predicted vs Actual Prices (BTC-USD)](Actual_vs_predicted_prices_BTC.png)
 
 ---
