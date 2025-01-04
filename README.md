@@ -13,7 +13,7 @@ Key Features:
 - **Mean Squared Error on Test Data**: `0.0007619597599841654`
 - Below is a sample graph showing actual vs predicted prices:
 
-![Predicted vs Actual Prices](graphs/Actual_vs_predicted_prices.png)
+![Predicted vs Actual Prices](Actual_vs_predicted_prices.png)
 
 ## Installation
 
